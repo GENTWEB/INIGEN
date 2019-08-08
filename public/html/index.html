@@ -1,0 +1,70 @@
+<!doctype html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8" />
+            <title>iniGEN Homepage</title>
+            
+
+            <!--- Reset CSS file--->
+            <link rel="stylesheet" href = "../styles/reset.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+           
+                      
+            <!--JQuery link-->   
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="../vegas/jquery.vegas.js"></script>
+            <link rel="stylesheet" type="text/css" href="../vegas/jquery.vegas.css" />
+
+            <!--Personalized Styling-->
+            <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+
+            <!-- Animate.css Styling -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+            
+        </head>
+
+        <body>
+            
+            <script>
+            $.vegas('slideshow', {
+                delay:10000,
+                backgrounds:[
+                    { src:'../images/ARK.jpg', fade:1000 },
+                    { src:'../images/Bioshock.jpg', fade:1000 },
+                    { src:'../images/Fortnite.jpg', fade:1000 },
+                    { src:'../images/MassEffect.jpg', fade:1000 },
+                    { src:'../images/Rocket.jpg', fade:1000 }
+                ]
+            })('overlay');
+            </script>
+
+            <div class='container'>
+                <div class = 'jumbotron'>
+                    <h1 class = "text-danger">iniGEN</h1>
+                    <p class="lead">
+                        Welcome to the iniGEN homepage!  <br>
+                        Upload the ini file of your choice using the buttons below.  <br>
+                        Happy Gaming!
+                    </p>  
+                    <br>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input class="btn btn-primary animated flipInY" type="file">
+                            </div>
+                        </div>
+                        <div class = "btn btn-primary animated delay-2s flipInX">
+                            Submit
+                        </div>
+                    </form>
+                </div>    
+            </div>    
+                
+            <link rel = "stylesheet" href="../styles/styles.css">            
+        </body>
+
+    </html>
